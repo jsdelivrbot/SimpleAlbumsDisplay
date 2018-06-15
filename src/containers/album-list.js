@@ -13,19 +13,23 @@ class AlbumList extends Component {
   renderList() {
     return this.props.albums.items.map((album) => {
       return (
-        <li
-        key={album.title}
-        onClick={() => this.props.selectAlbum(album)}
-        className='list-group-item'>{album.title}</li>
+        <div key={album[0].albumId}
+          onClick={() => this.props.selectAlbum(album)}
+          className='main-div col-sm-4'>
+          <div className='card-1'>
+            <img className='album-img' src={album[0].thumbnailUrl}/>
+            <div className='album-title'>{album[0].title}</div>
+          </div>
+        </div>
       );
     });
   }
 
   render() {
     return (
-      <ul className = 'list-group col-sm-4'>
+      <div className = 'container'>
         {this.renderList()}
-      </ul>
+      </div>
     );
   }
 }

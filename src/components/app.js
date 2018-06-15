@@ -6,8 +6,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-      	<AlbumList />
-      	<AlbumDetail />
+      	<AlbumList className='container album-list'/>
       </div>
     );
   }
