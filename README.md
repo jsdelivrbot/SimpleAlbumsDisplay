@@ -1,0 +1,1 @@
+A Simple Albumns display
