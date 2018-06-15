@@ -27,15 +27,23 @@ class AlbumList extends Component {
   }
 
   render() {
-    return (
-      <div className = 'container'>
-        <div id="album-home">
-          <div>
-            {this.renderList()}
+    if(this.props.screen == 'HOME-PAGE' || !this.props.screen){
+      return (
+        <div className = 'container'>
+          <div id="album-home">
+            <div>
+              {this.renderList()}
+            </div>
           </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div className = 'container'>
+          
+        </div>
+      );
+    }
   }
 }
 
