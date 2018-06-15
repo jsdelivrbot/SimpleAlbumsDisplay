@@ -30,7 +30,6 @@
 
 		var albumbsArray = Object.keys(albumsDictionary).map(function (key) { return albumsDictionary[key] })
 
-		console.log(albumbsArray);
 		return {
 		  ...state,
 		  loading: false,

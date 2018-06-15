@@ -1,6 +1,10 @@
-.list-item {
+#container {
+    background: #f3f3f3;
 }
 
+#items-screen {
+    display: none;
+}
 
 .main-div {
     padding: 1rem;
@@ -23,14 +27,22 @@
     width: 150px;
     height: 150px;
     margin: 0;
+    padding: 1rem;
 }
 
 .album-title {
     margin-left: calc(150px + 1rem);
     margin-right: 1rem;
+    margin-top: 1rem;
     display: block;
     line-height: 32px;
     margin-bottom: 8px;
     font-size: 24px;
     font-weight: 300;
+    color: #212121;
+    text-transform: capitalize;
+}
+
+.album-items-container {
+    text-align: center;
 }
